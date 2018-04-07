@@ -39,11 +39,7 @@
     End Sub
 
     Private Sub ClSong1_Click(sender As Object, e As EventArgs) Handles clSong1.Click
-        If song2.Text = "" Then
-            song1.Text = ""
-        Else
-            MsgBox("第二首歌不为空", vbInformation, "可爱的提示")
-        End If
+        song1.Text = "原版手指操音频.mp3"
     End Sub
     Private Sub ClSong2_Click(sender As Object, e As EventArgs) Handles clSong2.Click
         If song3.Text = "" Then
@@ -94,13 +90,10 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Environment.GetEnvironmentVariable("ProgramFiles(x86)") = "" Then
             mkvmerge = "mkvmerge32.exe"
+            Me.Text = Me.Text & " (32 位)"
         Else
             mkvmerge = "mkvmerge.exe"
-        End If
-        If mkvmerge = "mkvmerge.exe" Then
             Me.Text = Me.Text & " (64 位)"
-        Else
-            Me.Text = Me.Text & " (32 位)"
         End If
     End Sub
 

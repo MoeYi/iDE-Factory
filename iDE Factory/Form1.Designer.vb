@@ -45,12 +45,12 @@ Partial Class Form1
         Me.savePath = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.opSong1 = New System.Windows.Forms.OpenFileDialog()
         Me.opSong2 = New System.Windows.Forms.OpenFileDialog()
         Me.opSong3 = New System.Windows.Forms.OpenFileDialog()
         Me.opSong4 = New System.Windows.Forms.OpenFileDialog()
         Me.sfOut = New System.Windows.Forms.SaveFileDialog()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -203,7 +203,7 @@ Partial Class Form1
         Me.clSong1.Name = "clSong1"
         Me.clSong1.Size = New System.Drawing.Size(56, 24)
         Me.clSong1.TabIndex = 14
-        Me.clSong1.Text = "清除"
+        Me.clSong1.Text = "重置"
         Me.clSong1.UseVisualStyleBackColor = True
         '
         'clSong2
@@ -244,6 +244,7 @@ Partial Class Form1
         Me.song1.Name = "song1"
         Me.song1.Size = New System.Drawing.Size(334, 30)
         Me.song1.TabIndex = 18
+        Me.song1.Text = "原版手指操音频.mp3"
         '
         'song2
         '
@@ -302,6 +303,17 @@ Partial Class Form1
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "作者博客"
         '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LinkLabel2.Location = New System.Drawing.Point(93, 150)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(334, 39)
+        Me.LinkLabel2.TabIndex = 25
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "室内操交流群"
+        '
         'opSong1
         '
         Me.opSong1.FileName = "OpenFileDialog1"
@@ -329,17 +341,6 @@ Partial Class Form1
         Me.sfOut.FileName = "室内操"
         Me.sfOut.Filter = "室内操|*.mkv"
         '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LinkLabel2.Location = New System.Drawing.Point(93, 150)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(334, 39)
-        Me.LinkLabel2.TabIndex = 25
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "室内操交流群"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -348,7 +349,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "室内操工厂 公测版 1.0 Beta 1 by 凌莞"
+        Me.Text = "室内操工厂 1.1"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         Me.ResumeLayout(False)
